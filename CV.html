@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: "poppins",sans-serif;
+        }
+        body{
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: #fff;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow:0 35px 55px rgba(0,0,0,0.1);
+        }
+        .container .left_side{
+            position: relative;
+            background: #003147;
+            padding:40px;
+        }
+        .profileText{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .profileText .imgBx{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .profileText .imgBx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .profileText h2{
+            color:#fff;
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4em;
+        }
+        .profileText h2 span{
+            font-size: 0.8em;
+            font-weight: 300;
+        }
+
+        
+        .container .right_side{
+            position: relative;
+            background: #fff;
+            padding: 40px;
+        }
+        .contactInfo{
+            padding-top: 40px;
+        }
+        .title{
+            color:#fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .contactInfo ul{
+            position: relative;
+        }
+        .contactInfo ul li{
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .contactInfo ul li .icon{
+            display: inline-block;
+            width: 15px;
+            font-size: 18px;
+            color:#03a9f4;
+        }
+        .contactInfo ul li span{
+            color:#fff;
+            font-weight: 300;
+        }
+        .contactInfo.education li{
+            margin-bottom: 15px;
+        }
+        .contactInfo.education h5{
+            color:#03a9f4;
+            font-weight: 500;
+        }
+        .contactInfo.education h4:nth-child(2){
+            color:#fff;
+            font-weight: 500;
+        }
+        .contactInfo.education h4{
+            color:#fff;
+            font-weight: 300;
+        }
+        .contactInfo.language .percent{
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background: #081921;
+            display: block;
+            margin-top: 5px;
+        }
+        .contactInfo.language .percent div{
+             position: absolute;
+             top: 0;
+             left: 0;
+             height: 100%;
+             background: #03a9f4;
+        }
+        .about{
+            margin-bottom: 50px;
+
+        }
+        .about:last-child{
+            margin-bottom: 0;
+        }
+        .title2{
+            color:#003147;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        p{
+            color:#333;
+        }
+        .skills .box{
+            position: relative;
+            width:100%;
+            display: grid;
+            grid-template-columns: 15opx 1fr;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .skills .box h4{
+            text-transform: uppercase;
+            color:#848c99;
+            font-weight: 500;
+        }
+        .skills .box  .percent{
+            position: relative;
+            width: 100%;
+            height: 10px;
+            background: #f0f0f0;
+
+        }
+        .skills .box  .percent div{
+            position: absolute;
+            top:0;
+            left: 0;
+            height: 100%;
+            background: #03a9f4;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgBx">
+                 <img src="../images/img7.png">
+                </div>
+                <h2>Rakesh Kumar<br><span>Web Developer</span></h2>
+            </div>
+            <div class="contactInfo">
+                <h3 class="title">contact Info</h3>
+                <ul>
+                    <Li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">9625330711</span>
+                    </Li>
+                    <Li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">rakeshbehera47551@gmail.com</span>
+                    </Li>
+                    <Li>
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        <span class="text">www.linkedin.com/me</span>
+                    </Li>
+                    <Li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></i></span>
+                        <span class="text">bhadrak,odisha,india</span>
+                    </Li>
+                </ul>
+            </div>
+            <div class="contactInfo education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <Li>
+                        <h5>2015-2019</h5>
+                        <h4>Bachelor's degree of science </h4>
+                        <h4>Jambeshwar Mahavidyalaya garasang,Bls</h4>
+                    </Li>
+                    <Li>
+                        <h5>2013-2015</h5>
+                        <h4>Intermediet </h4>
+                        <h4>Jambeshwar Mahavidyalaya garasang,Bls</h4> 
+                    </Li>
+                    <Li>
+                        <h5>2013</h5>
+                        <h4>HSCE </h4>
+                        <h4>B.J High School Banitia</h4>
+                    </Li>
+                    
+                </ul>
+            </div>
+            <div class="contactInfo language">
+                <h3 class="title">Language</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent">
+                            <div style="width:90%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Hindi</span>
+                        <span class="percent">
+                            <div style="width:100%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Odia</span>
+                        <span class="percent">
+                            <div style="width:100%;"></div>
+                        </span>
+                    </li>
+                </ul>
+                </div>
+        </div>
+        <div class="right_side">
+            <div class="about">
+                <h2 class="title2">profile</h2>
+                <p>"As a dedicated Frontend Developer,I aim to leverage my skills in html5,css3,javascript,and responsive design to create engaging and userfriendly web experiences.I'm passionate about staying current with the latest web technologies and frameworks,and I'm eager to contribute my expertise to a dynamic team that values innovation and creativity."</p>
+            </div>
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <h4>freshers</h4>
+                
+
+            </div>
+            <div class="about skills">
+                <h2 class="title2">professional skills</h2>
+                <div class="box">
+                   <h4>my sql</h4>
+                   <div class="percent">
+                    <div style="width:90%"></div>
+                    </div>
+                </div><br>
+                <div class="box">
+                    <h4>html5</h4>
+                    <div class="percent">
+                        <div style="width:95%"></div>
+                        </div>
+                 </div><br>
+                 <div class="box">
+                    <h4>css3</h4>
+                    <div class="percent">
+                        <div style="width:90%"></div>
+                        </div>
+                 </div><br>
+                 <div class="box">
+                    <h4>javascript</h4>
+                    <div class="percent">
+                        <div style="width:80%"></div>
+                        </div>
+                 </div><br>
+                 <div class="box">
+                    <h4>bootstrap</h4>
+                    <div class="percent">
+                        <div style="width:85%"></div>
+                        </div>
+                 </div><br>
+                 <div class="box">
+                    <h4>jquery</h4>
+                    <div class="percent">
+                        <div style="width:80%"></div>
+                        </div>
+                 </div><br>
+                 <div class="box">
+                    <h4>Angular</h4>
+                    <div class="percent">
+                        <div style="width:90%"></div>
+                        </div>
+                 </div>
+
+            </div>
+            <div class="about intrest">
+                <h2 class="title2">interest</h2>
+                  <ul>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i>gaming</li>
+                    <li><i class="fa fa-headphones" aria-hidden="true"></i>listening</li>
+                    <li><i class="fa fa-book" aria-hidden="true"></i>reading</li>
+                    <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        writting</li>
+                    
+                  </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
